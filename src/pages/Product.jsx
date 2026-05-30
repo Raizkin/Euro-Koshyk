@@ -2,27 +2,25 @@ const products = [
   {
     name: "Milka Oreo",
     brand: "Milka",
-    image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60"
+    image: "https://images.unsplash.com/photo-1621939514649-280e2ee25f60",
   },
   {
     name: "Jacobs Monarch",
     brand: "Jacobs",
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085",
   },
   {
     name: "Nutella",
     brand: "Ferrero",
-    image: "https://images.unsplash.com/photo-1587049352851-8d4e89133924"
-  }
+    image: "https://images.unsplash.com/photo-1587049352851-8d4e89133924",
+  },
 ];
 
 export default function Product() {
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-black mb-10">
-          Популярні товари
-        </h2>
+        <h2 className="text-4xl font-black mb-10">Популярні товари</h2>
 
         <div className="grid md:grid-cols-3 gap-8">
           {products.map((product) => (
@@ -37,17 +35,9 @@ export default function Product() {
               />
 
               <div className="p-5">
-                <h3 className="font-bold text-xl mb-2">
-                  {product.name}
-                </h3>
+                <h3 className="font-bold text-xl mb-2">{product.name}</h3>
 
-                <p className="text-gray-500 font-medium">
-  {product.brand}
-</p>  
-
-               <button className="mt-4 w-full bg-black text-white hover:bg-zinc-800 py-3 rounded-xl font-bold transition">
-  Переглянути
-</button>
+                <p className="text-gray-500 font-medium">{product.brand}</p>
               </div>
             </div>
           ))}
